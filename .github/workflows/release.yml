@@ -28,7 +28,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile chess_ui.py --name BobaChess
+          pyinstaller chess_ui.py --noconsole --onefile --name BobaChess
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
